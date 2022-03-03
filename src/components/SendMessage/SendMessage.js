@@ -5,9 +5,10 @@ const SendMessage = (props) => {
   const [inputText, setInputText] = useState("");
 
   const send = (event) => {
-    if (props.loading) {
-      alert("Loading... Please wait");
-    } else if (inputText === "") {
+    // if (props.loading) {
+    //   alert("Loading... Please wait");
+    // } else
+    if (inputText === "") {
       alert("Empty message");
     } else {
       props.sendMsg(inputText);
@@ -32,7 +33,9 @@ const SendMessage = (props) => {
       <button onClick={props.clearChat} className="sendBtn">
         Clear Chat
       </button>
-      <button className="sendBtn">Test this app</button>
+      <button onClick={props.testApp} className="sendBtn">
+        Test this app
+      </button>
     </div>
   );
 };
