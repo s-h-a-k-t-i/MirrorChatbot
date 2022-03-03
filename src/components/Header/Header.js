@@ -1,5 +1,5 @@
 import "./Header.css";
-import chatbotImage from "../Images/chatbot-image.png";
+import chatbotImage from "../../Images/chatbot-image.png";
 
 const Header = () => {
   return (

@@ -5,18 +5,18 @@ const SendMessage = (props) => {
   const [inputText, setInputText] = useState("");
 
   const send = (event) => {
-    if (inputText === "") {
+    if (props.loading) {
+      alert("Loading... Please wait");
+    } else if (inputText === "") {
       alert("Empty message");
     } else {
       props.sendMsg(inputText);
       setInputText("");
-      event.preventDefault();
     }
   };
 
   return (
     <div className="inputBox">
-      {/* <form> */}
       <input
         className="chatInput"
         name="Input box"
@@ -24,12 +24,15 @@ const SendMessage = (props) => {
         onChange={(event) => setInputText(event.target.value)}
         value={inputText}
         placeholder="Type a message"
+        autoComplete="off"
       />
       <button onClick={send} className="sendBtn">
         Send
       </button>
+      <button onClick={props.clearChat} className="sendBtn">
+        Clear Chat
+      </button>
       <button className="sendBtn">Test this app</button>
-      {/* </form> */}
     </div>
   );
 };

@@ -1,0 +1,33 @@
+.inputBox {
+  height: 10%;
+  box-sizing: border-box;
+  display: flex;
+}
+
+.chatInput {
+  width: 52%;
+  border: none;
+  padding: 2vmax;
+  box-sizing: border-box;
+  background-color: white;
+  outline: none;
+  font-family: "McLaren", cursive;
+  font-weight: 100;
+  font-size: 1.7vmax;
+}
+
+.sendBtn {
+  background-color: #65c18c;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  width: 16%;
+  transition: all 0.3s;
+  cursor: pointer;
+  border-radius: 5%;
+  margin: 1em 0.5em;
+}
+
+.sendBtn:hover {
+  background-color: #57b67e;
+}
