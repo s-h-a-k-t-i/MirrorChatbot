@@ -1,0 +1,19 @@
+.header {
+  background-color: #25d366;
+  height: 15%;
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+}
+
+.header > h1 {
+  color: black;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.header > img {
+  margin: 2.5vmax;
+  width: 2rem;
+  height: 2rem;
+}
